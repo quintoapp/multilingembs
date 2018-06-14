@@ -1,5 +1,5 @@
 FROM ubuntu:17.10
-RUN apt-get clean -y && apt-get update && apt-get upgrade -y
+RUN apt-get update
 RUN apt-get install python3-pip git wget -y
 RUN apt-get install python3-numpy -y
 RUN pip3 install flask flask-cors ujson nltk
